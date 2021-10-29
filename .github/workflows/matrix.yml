@@ -22,6 +22,7 @@ jobs:
   Build:
     needs: Clone-down
     runs-on: ubuntu-latest
+    continue-on-error: true
     strategy:
       matrix:
         container: ["gradle:6-jdk8", "gradle:6-jdk11", "gradle:6-jdk17"]
