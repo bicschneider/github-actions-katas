@@ -44,7 +44,7 @@ This will make the action clone down the repository.
 In case of issues with access denied add `chmod +x ci/build-app.sh` before the execution, so the entire run script looks like this:
 
 ```YAML
- - run: chmod +x ci/build-app.sh && ci/build-app.sh
+ - run: bash ci/build-app.sh
 ```
 
 </details>
